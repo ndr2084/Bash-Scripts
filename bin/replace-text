@@ -1,0 +1,44 @@
+#!/bin/bash
+source "$LIB_PATH/Strings/is_string.sh"
+source "$LIB_PATH/Test/print_variables.sh"
+#CONDITIONAL-VARIABLES these are fucked, fix tomorrow
+# Use the is_string function from the library
+is_string "$1"; REMOVE=$? 
+is_string "$2"; INSERT=$?
+IS_FILE=$( [ -f "$3" ]; echo $? )
+VALID_INPUT=$( [ "$IS_FILE" -eq 0 ] && [ "$INSERT" -eq 0 ] && [ "$REMOVE" -eq 0 ]; echo $? )
+
+#VARIABLES 
+FILE=$3
+
+#FLAGS
+BACKUP=$( [ "$#" == "-b" ]; echo $? ) 
+EXACTWORD=$( [ "$#" == "-e" ]; echo $? )
+SUBSTRING=$( [ "$#" == "-s" ]; echo $? )
+
+
+#TEST print_variables "$@"
+
+#check argument sequence
+if [ "$VALID_INPUT" -eq 1 ]; then
+    echo "error: improper argument format."
+    exit 1
+fi
+
+#create enumerated backup
+if [ $BACKUP ]; then
+    cp --backup=numbered "$FILE" "${FILE}.bak"
+fi 
+
+#removes exact string
+if [ $EXACTWORD ]; then
+    sed -i "s/\<$1\>/$2/g" "$3"
+fi
+
+#removes pattern
+if [ $SUBSTRING ]; then
+    sed -i "s/$1/$2/g" "$3"
+fi    
+
+
+    

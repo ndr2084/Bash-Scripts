@@ -1,0 +1,174 @@
+  508  git init
+  509  git add README.md
+  510  git commit -m "first commit"
+  511  git branch -M main
+  512  git remote add origin https://github.com/ndr2084/Silberschatz-9th-Edition-Answers.git
+  513  git push -u origin main
+  515  git init
+  516  git add README.md
+  517  git commit -m "first commit"
+  518  git branch -M main
+  519  git remote add origin https://github.com/ndr2084/Silberschatz-9th-Edition-Answers.git
+  520  git push -u origin main
+  521  git config --global user.email "ndrous2084@gmail.com"
+  522  git config --global user.name "nathan rous"
+  524  git init
+  525  git add README.md
+  526  git commit -m "first commit"
+  527  git branch -M main
+  528  git remote add origin https://github.com/ndr2084/Silberschatz-9th-Edition-Answers.git
+  529  git push -u origin main
+  531  git branch -M main
+  532  git remote add origin https://github.com/ndr2084/Silberschatz-9th-Edition-Answers.git
+  533  git branch -M main
+  534  git push -u origin main
+  535  git init
+  536  git add .
+  537  git commit -m "test"
+  538  git push origin main
+  539  git config --global credential.helper cache
+  540  git push origin main
+  541  git config --global credential.helper cache
+  542  git push origin main
+  746  git init
+  748  git add .
+  749  git commit -m "init commit"
+  760  git remote add origin https://github.com/ndr2084/Bash-Scripts.git
+  761  git remote add origin https://github.com/ndr2084/Bash-Scripts
+  762  git init
+  763  git add .
+  766  git init
+  767  git add .
+  768  git commit -m "initial"
+  769  git remote add origin https://github.com/ndr2084/Bash-Scripts
+  770  git push -u origin master
+  771  git push -u origin main
+  772  git branch
+  773  git checkout main
+  774  git checkout 
+  775  git commit -m "initial"
+  776  git push -u origin master
+  777  git branch -D master 
+  778  git push origin --delete  master 
+  779  git push origin --delete master
+  780  git push origin --delete master 
+  781  git push origin --delete origin/master  
+  789  git --version
+  790  git status
+  793  git init
+  794  git add README.md 
+  795  git commit -m "1nd"
+  796  git branch -M main
+  797  git remote add origin https://github.com/ndrous2084/Bash-repo.git
+  798  git push -u origin main
+  800  git init
+  801  git add README.md
+  802  git commit -m "first commit"
+  803  git branch -M main
+  804  git remote add origin https://github.com/ndr2084/Bash-repo.git
+  805  git push -u origin main
+  807  git remote add origin https://github.com/ndr2084/Bash-repo.git
+  808  git branch -M main
+  809  git push -u origin main
+  811  git remote
+  812  git remote -v
+  813  git remote remove origin
+  814  git init
+  815  git add README.md
+  816  git commit -m "first commit"
+  817  git branch -M main
+  818  git remote add origin https://github.com/ndr2084/Bash-repo.git
+  819  git push -u origin main
+  823  git config --global credential.helper 
+  824  git scalar
+  825  git -help 
+  827  git config credential.helper \
+  828  git config credential.helper
+  829  git add README.md
+  830  git push -u origin main
+  833  git init
+  834  git add test/
+  837  git push -u origin main
+  839  git init
+  840  git add .
+  841  git push
+  842  git push origin
+  843  git pull --rebase
+  844  git push
+  845  git push origin
+  850  git init
+  851  git add .
+  852  git push origin
+  859  git init
+  860  git add . 
+  861  git rm --cached Bash-Scripts
+  862  git rmf --cached Bash-Scripts
+  863  git rm -f --cached Bash-Scripts
+  867  git add . 
+  869  git add
+  870  git add .
+  871  git push origin
+  894  git init
+  896  git commit -m
+  897  git add .
+  898  git commit -m "1nd"
+  899  git branch -M
+  900  git branch -M main
+  901  git remote add origin https://github.com/ndr2084/my-project.git
+  902  git push -u origin main
+  904  git config --global --unset credential.helper
+  906  git config --global --unset-all
+  907  git config --list
+  908  git config --system
+  909  git config --system --list
+  910  git config --global --list
+  911  git config --local
+  912  git config --local --list
+  913  git config --global credential.helper 
+  914  git config --local credential.helper 
+  915  git config --system credential.helper 
+  917  git config --global --unset-all
+  918  git config --global --unset user.name
+  919  git config --global --unset user.email
+  920  git config --global --unset credential.helper
+  921  git config --global --list
+  922  git init 
+  923  git add .
+  924  git push origin
+  925  git commit
+  926  git config --global user.email "ndrous2084@gmail.com"
+  927  git config --global user.name "Nathan Rous"
+  928  git commit
+  936  git init
+  937  git add .
+  938  git push
+  939  git remote add https://github.com/ndr2084/my-project
+  940  git push https://github.com/ndr2084/my-project
+  948  git init -b main
+  949  git add .
+  950  git commit -m "1nd"
+  952  git push
+  957  git init -b main
+  959  git add .
+  960  git push origin 
+  961  git push origin -u origin main
+  962  git branch -M main
+  963  git push -u origin main
+  964  git remote add origin https://github.com/ndr2084/Bash.git
+  965  git branch -M main
+  966  git push -u origin main
+  967  git pull
+  968  git pull origin HEAD 
+  969  git pull origin main
+  970  git pull --rebase
+  971  git push
+  972  git push -u origin head
+  974  git commit -m "1nd"
+  975  git push origin
+  976  git push -u origin head
+  979  git init
+  980  git add README.md
+  981  git commit -m "first commit"
+  982  git branch -M main
+  983  git remote add origin https://github.com/ndr2084/Bash.git
+  984  git push -u origin main
