@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#Returns rows where COLUMN $1 contains VALUE $2
+
+#variables
+COLUMN=$1
+VALUE=$2 
+FILE=$3 
+MAX_COLUMN_NUMBER=$(awk '{ if (NF > max) max=NF } END { print max }' "$FILE")
+MIN_COLUMN_NUMBER=0
+PATTERN_INTEGER="[0-9]"
+PATTERN_FLOAT="^[0-9]+(\.[0-9]+)?$"
+
+
+#checking column bounds
+
+if [ $COLUMN -le $MIN_COLUMN_NUMBER ]; then 
+    echo "error: column input must be greater than $MIN_COLUMN_NUMBER" 
+    exit 1
+fi
+
+if [ $COLUMN -gt $MAX_COLUMN_NUMBER ]; then
+    echo "error: greatest column value is $MAX_COLUMN_NUMBER" 
+    exit 1
+fi
+
+#checking if VALUE is regex 
+
+if [ "$VALUE" = "PATTERN_INTEGER" ]; then
+    awk -v col="$COLUMN" -v val="$PATTERN_INTEGER" '{ if ($col ~ val) print }' "$FILE" 
+fi
+
+awk -v col="$COLUMN" -v val="$VALUE" '{ if ($col ~ val) print }' "$FILE"
+# awk  " { if ($<col_num> ~ /<pattern>/)  print } <file.txt>  
+
+
+
