@@ -1,6 +1,6 @@
 #!/bin/bash
 FILE=$1
-ROW_COUNT=$(wc -l < "$FILE")
+ROW_COUNT=$(($(wc -l < "$FILE")-1))
 echo $ROW_COUNT
 
 #head -n <row_range> example.txt | tail -n 1

@@ -27,10 +27,12 @@ fi
 #checking if VALUE is regex 
 
 if [ "$VALUE" = "PATTERN_INTEGER" ]; then
-    awk -v col="$COLUMN" -v val="$PATTERN_INTEGER" '{ if ($col ~ val) print }' "$FILE" 
-fi
-
+    awk -v col="$COLUMN" -v val="$PATTERN_INTEGER" '{ if (col ~ val) print }' "$FILE" 
+else
+#matches pattern exactly
 awk -v col="$COLUMN" -v val="$VALUE" '{ if ($col ~ val) print }' "$FILE"
+echo $COLUMN
+fi
 # awk  " { if ($<col_num> ~ /<pattern>/)  print } <file.txt>  
 
 

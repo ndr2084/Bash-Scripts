@@ -1,8 +1,8 @@
 #!/bin/bash
 source "$LIB_PATH/Strings/is_string.sh"
 source "$LIB_PATH/Test/print_variables.sh"
-#CONDITIONAL-VARIABLES these are fucked, fix tomorrow
-# Use the is_string function from the library
+#CONDITIONAL-VARIABLES
+
 is_string "$1"; REMOVE=$? 
 is_string "$2"; INSERT=$?
 IS_FILE=$( [ -f "$3" ]; echo $? )
